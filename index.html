@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Registration Page</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+  <style>
+    body {
+      background-image: url('/images/bg-intro-desktop.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+
+    }
+
+    .error {
+      border-color: red;
+      color: red;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+  <script src="./js/validate.js" defer></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+</head>
+
+<body class='bg-[#FF7A7A] '>
+  <div
+    class="flex sm:flex-row flex-col sm:space-y-0 space-y-4 h-screen items-center justify-center p-4 sm:space-x-5  max-w-2xl mx-auto">
+    <!-- side text -->
+    <div class=" space-y-3 max-w-xs mx-auto text-center sm:text-left">
+      <h1 class='text-white font-black font-fam1 text-2xl'>Learn to code by watching others</h1>
+      <p class='text-[10px] text-white font-fam1'>See how experienced developers solve problems in
+        real-time.
+        Watching
+        scripted tutorials is
+        great, but understanding how developers think is invaluable</p>
+    </div>
+    <div class="flex flex-col space-y-4 mx-4">
+
+      <div
+        class="p-3 w-full text-[10px] bg-[#6055A5] text-center shadow-md rounded-lg shadow-gray-500">
+        <span class=" text-white">
+          Try it free 7 days
+        </span>
+        <span class='text-gray-300'>then $20/mo thereafter</span>
+      </div>
+      <!-- form -->
+      <div class="bg-white h-fit sm:w-80 p-3 shadow-md shadow-gray-500 rounded-lg overflow-hidden">
+        <div class="">
+
+          <form action="" class="p-2 space-y-3 flex flex-col " id='myForm'>
+            <div class="flex flex-col space-y-1 relative ">
+              <input type="text" name="firstName" id="firstName" placeholder="First Name"
+                class="border px-3 py-2 rounded-md text-sm" />
+              <p class='text-[8px] text-right text-red-600 hidden' id='firstnameerror'>First name
+                cannot be empty.</p>
+              <div class="hidden absolute right-2" id='firstNameIcon'>
+                <span class="material-symbols-outlined text-red-400  hidden">
+                  error
+                </span>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-1 relative">
+              <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+                class="border px-3 py-2 rounded-md text-sm" />
+              <p class='text-[8px] text-right text-red-600 hidden' id='lastnameerror'>Last name
+                cannot be empty.</p>
+              <div class="hidden absolute right-2" id='lastNameIcon'>
+                <span class="material-symbols-outlined text-red-400  hidden">
+                  error
+                </span>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-1 relative">
+              <input type="email" name="email" id="email" placeholder="Email"
+                class="border px-3 py-2 rounded-md text-sm" />
+              <p class='text-[8px] text-right text-red-600 hidden' id='emailerror'>Looks like
+                this is not an email.</p>
+              <div class="hidden absolute right-2" id='emailIcon'>
+                <span class="material-symbols-outlined text-red-400  hidden">
+                  error
+                </span>
+              </div>
+            </div>
+            <div class="flex flex-col space-y-1 relative">
+              <input type="password" name="password" id="password" placeholder="Password"
+                class="border px-3 py-2 rounded-md text-sm" />
+              <p class='text-[8px] text-right text-red-600 hidden' id='passworderror'>Password
+                cannot be empty</p>
+              <div class="hidden absolute right-2" id='passwordIcon'>
+                <span class="material-symbols-outlined text-red-400  hidden">
+                  error
+                </span>
+              </div>
+            </div>
+
+
+
+
+            <button
+              class="bg-[#38CC8C] hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md text-xs transition duration-300 ease-in-out"
+              id='myFormButton'>
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </form>
+
+
+
+          <div class="text-center">
+            <p class='text-[8px]'><span>By clicking the button you are agreeing to our</span>
+              <span><a href="#" class='text-red-500 font-semibold'>Terms
+                  and
+                  Service</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
